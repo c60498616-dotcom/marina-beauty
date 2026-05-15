@@ -271,116 +271,112 @@ body {
   transition-duration: 0ms;
 }
 
-/* ---------- Horizontal pinned showcase (.hpin) ---------- */
+/* ============================================================
+   Horizontal pinned showcase (.hpin) — minimal flat rounded
+   Light surface, navy text, soft 24px gutters between cards.
+   ============================================================ */
 .hpin {
   position: relative;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  background: #0b1c30; /* on-surface */
-  color: #f8f9ff;       /* surface */
-  overflow: hidden;
+  background: #f8f9ff; /* surface */
 }
 .hpin__pin {
+  position: relative;
+  height: calc(100vh - 80px); /* leave room for fixed 80px header */
+  min-height: 560px;
+  max-height: 760px;
+  overflow: hidden;
   display: flex;
-  align-items: stretch;
-  height: 100vh;
-  min-height: 600px;
-}
-.hpin__intro {
-  flex: 0 0 38vw;
-  max-width: 520px;
-  padding: 7vh 6vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-}
-.hpin__intro h2,
-.hpin__intro h2 .h-underline {
-  color: #f8f9ff;
-}
-.hpin__intro .h-underline::after {
-  background: #7bd1fa;
-}
-.hpin__intro p {
-  color: rgba(248, 249, 255, 0.7);
-}
-.hpin__hint {
-  color: rgba(248, 249, 255, 0.55);
-  animation: hpin-bounce 2.4s var(--ease-in-out-smooth) infinite;
-}
-@keyframes hpin-bounce {
-  0%, 100% { transform: translateX(0); }
-  50%      { transform: translateX(6px); }
+  align-items: center;
+  padding-left: max(24px, calc((100vw - 1280px) / 2 + 24px));
 }
 .hpin__track {
   display: flex;
-  flex: 1 1 auto;
+  gap: 24px;
   will-change: transform;
 }
 .hpin__panel {
-  flex: 0 0 70vw;
-  height: 100vh;
-  min-height: 600px;
-  position: relative;
+  flex: 0 0 clamp(320px, 38vw, 520px);
+  height: calc(100% - 32px);
+  background: #ffffff; /* surface-container-lowest */
+  border: 1px solid #c3c6d6; /* outline-variant */
+  border-radius: 1rem; /* big flat radius */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 320ms var(--ease-out-soft),
+              border-color 320ms var(--ease-out-soft);
+}
+.hpin__panel:hover {
+  transform: translateY(-4px);
+  border-color: #00328a;
+}
+.hpin__media {
+  flex: 1 1 auto;
+  min-height: 0;
   background-size: cover;
   background-position: center;
+  border-radius: 0.75rem;
+  margin: 20px 20px 0;
+}
+.hpin__body {
+  padding: 20px 24px 24px;
   display: flex;
-  align-items: flex-end;
-  padding: 4vh 4vw;
-  margin-right: 24px;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.hpin__panel::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(11,28,48,0) 40%, rgba(11,28,48,0.85) 100%);
-  pointer-events: none;
+.hpin__num {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: #b3c5ff; /* primary-fixed-dim */
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+  line-height: 1;
 }
-.hpin__caption {
-  position: relative;
-  z-index: 1;
-  max-width: 460px;
-  color: #fff;
+.hpin__panel--cta {
+  background: #00328a; /* primary */
+  border-color: #00328a;
+  justify-content: center;
+  text-align: left;
 }
+.hpin__panel--cta .hpin__body { padding: 32px; }
+.hpin__panel--cta .hpin__num   { color: #7bd1fa; }
+.hpin__panel--cta h3           { color: #ffffff !important; }
+.hpin__panel--cta p            { color: rgba(255,255,255,0.75) !important; }
+.hpin__panel--cta span         { color: #b3c5ff !important; }
+
 .hpin__progress {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   height: 3px;
-  background: rgba(255, 255, 255, 0.08);
+  background: #e5eeff; /* surface-container */
+  border-radius: 999px;
+  overflow: hidden;
 }
 .hpin__progress-fill {
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, #7bd1fa, #b3c5ff);
+  background: #00328a;
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 80ms linear;
+  border-radius: inherit;
 }
 
-/* Mobile / reduced fallback: native horizontal scroll, no pinning */
+/* Mobile / reduced fallback: native horizontal scroll-snap, no pin */
 .hpin--reduced .hpin__pin {
-  flex-direction: column;
   height: auto;
-}
-.hpin--reduced .hpin__intro {
-  flex: 0 0 auto;
-  max-width: 100%;
-  border-right: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-.hpin--reduced .hpin__track {
+  max-height: none;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  padding: 0 24px 8px;
+}
+.hpin--reduced .hpin__track {
+  transform: none !important;
 }
 .hpin--reduced .hpin__panel {
-  flex: 0 0 85vw;
-  height: 70vh;
-  min-height: 480px;
+  flex: 0 0 80vw;
+  max-width: 360px;
+  height: 460px;
   scroll-snap-align: start;
 }
 .hpin--reduced .hpin__progress { display: none; }

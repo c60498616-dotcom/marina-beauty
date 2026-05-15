@@ -105,6 +105,10 @@
     </script>
 <link href="assets/animations.css" rel="stylesheet"/>
 <script defer src="assets/scripts.js"></script>
+<!-- GSAP + ScrollTrigger for horizontal pin showcase -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="assets/horizontal-pin.js"></script>
 </head>
 <body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
 <!-- TopNavBar Shared Component -->
@@ -242,6 +246,77 @@
 </div>
 </div>
 </div>
+</div>
+</section>
+<!-- Horizontal Pinned Showcase (light, flat, rounded) -->
+<section class="hpin py-24" data-hpin>
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-12">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest" data-reveal data-reveal-delay="1">Showcase</span>
+<h2 class="font-headline-xl text-headline-xl md:text-headline-xl text-on-surface mt-3 inline-block" data-reveal data-reveal-delay="2"><span class="h-underline">Сезонная коллекция</span></h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-5" data-reveal data-reveal-delay="3">Шесть авторских образов сезона — пролистайте, чтобы увидеть всё.</p>
+</div>
+</div>
+<div class="hpin__pin">
+<div class="hpin__track" data-hpin-track>
+<article class="hpin__panel">
+<div class="hpin__media" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8Sotq4rVVB_NKGKem4i_8L_juTAZM208PMCcWeySGEHYwNy5Gkub0tPsfT_GtyLPbiQjkd0TfPPtisY4Pr_wpRIq5zzjabJp7UFsjjFyVyAA3De7CpPQdkeA3fbXsYT7MloLOjHF7cC-4GvSLMzzEEnlFjJ55mOLL2ZINrmZmYz7UWaNO0oUv83g05Cfuj_zSU27HbhK8sG-tP8wp2KIPTVWio9FppI30BydExk--qPuZPtaWWtj68Vibn-aSo02WQBIflw6HOwL8');"></div>
+<div class="hpin__body">
+<span class="hpin__num">01</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Волосы</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2">Морская волна</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Объёмная укладка с акцентом на текстуру.</p>
+</div>
+</article>
+<article class="hpin__panel">
+<div class="hpin__media" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnpIJVOT8jtkYexr-gIWexkPA0PdLBIhphVXJ9LnC-RpStmziSF8_wvXY9m59JUHbkhwTdBSIiBNVG6fJeBkW_g7jQy-NuPvV6BhwMa1pXPaJU9DnfwYV_eAVRAr8OICGZUEMLQyeNiDTdAY8qpJLdp_Gw3x-jJli0cXjSfRS8AC5n4XODKIlxUo4101zMYGbaGzd5zalBeyBgovv6FCjQqB_lgkMqA8iqDnl6wosfnMFxg_l446ko0Ojj4RIjRuQBHUgxofcg8T3u');"></div>
+<div class="hpin__body">
+<span class="hpin__num">02</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Ногти</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2">Жемчужный нюд</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Минимализм и стерильное покрытие.</p>
+</div>
+</article>
+<article class="hpin__panel">
+<div class="hpin__media" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxyLacA3HjHzuFwwUVebVO__l1uELFONSX6wMrrkCUim44F4jcYYxdMh0i2JEj7ieQnj_j_tYaAbCdk-h5DedeQyddIyL5Y-yzeO0qTuzeZ1mos4gVngNV0a-XgLp0Pj3E2XR0bFvbiAfxVHuLITEa6Qc_KTNEGGwqFA-8tPvgr1SgymBnKjvhkz0pJeuVCOuj8EPfib1RaiaNOMHIZjNgqeq_acvtMR5Rmce04Sg_1mgieBe1Y3j4KKM3s7lfeguZeIcZh35PF7ld');"></div>
+<div class="hpin__body">
+<span class="hpin__num">03</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Массаж</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2">Глубокое спокойствие</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Камни, ароматы, восстановление.</p>
+</div>
+</article>
+<article class="hpin__panel">
+<div class="hpin__media" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBC8WXS7x4MSgqihzA_iIiedd-YDHqW-Vw-v506U5tEgOvEkZYHhzmXj16IjUNHAPNdtv3TUbQMYarlCRMqSH8vvNaj-OR4dvXJPwwcMrTan_WWQu-PeYGAj4THyfpShrW6zgAyi2dl9jcaQCM30_AjNpPxJ5qj4F236fc-HL_IykbIy7lE9WzdI_wPfB66gEoIfTtCGDgGls9ESjy08m1Jx37-z_w68pTcbBImq1Pdq30g-miO4iZrEgEi0Wv81fztfgLObk9E5k8H');"></div>
+<div class="hpin__body">
+<span class="hpin__num">04</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Стиль</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2">Прецизия мастера</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Японская сталь, выверенный угол.</p>
+</div>
+</article>
+<article class="hpin__panel">
+<div class="hpin__media" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl0IG-XRdckarS9xyqQsg6Z9tES7gK92U10OgazLj6xHDa9MHPsgqIADNxZ7G3xOJ--P5gX_9LPEeV21nJrm-9DbaKS76kDmFqE-Ja1bPl0ezIPyc8-mTKtkLHHH0cel-9fqhjFNeZbAnGFVygVjXHQzhMwRHiW0Hc4T5sX4oKnP5zP4B5y4KoVGBSv2Ev7pU2Exowv9hgHPTG5oQDIuPIBO1Rbgc6nzjuwMMsyroOYbNkC4cMSUomcj7CAQa3AUZKw3dpFuTjM1Eb');"></div>
+<div class="hpin__body">
+<span class="hpin__num">05</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Атмосфера</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2">Coastal Light</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Свет, белый, и оттенки моря.</p>
+</div>
+</article>
+<article class="hpin__panel hpin__panel--cta">
+<div class="hpin__body">
+<span class="hpin__num">06</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Финал</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2">Запишитесь сейчас</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-6">Выберите услугу, мастера и удобное время.</p>
+<a href="booking.html" data-route="booking.html" class="btn-shimmer inline-block bg-primary-container text-on-primary px-6 py-3 rounded-lg font-label-sm text-label-sm">Забронировать визит</a>
+</div>
+</article>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-gutter mt-8">
+<div class="hpin__progress" aria-hidden="true"><div class="hpin__progress-fill" data-hpin-progress></div></div>
 </div>
 </section>
 <!-- Testimonials Section (generated via SuperDesign, integrated with our tokens) -->

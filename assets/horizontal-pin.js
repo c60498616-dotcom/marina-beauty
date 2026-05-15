@@ -38,9 +38,10 @@
   /** Build one ScrollTrigger pin per section. */
   const init = () => {
     document.querySelectorAll('[data-hpin]').forEach((section) => {
+      const pin = section.querySelector('.hpin__pin');
       const track = section.querySelector('[data-hpin-track]');
       const progress = section.querySelector('[data-hpin-progress]');
-      if (!track) return;
+      if (!track || !pin) return;
 
       // Safety: only enable on viewports wide enough that horizontal
       // scrolling makes sense. On mobile we keep native horizontal scroll.
@@ -49,9 +50,11 @@
         return;
       }
 
+      const HEADER_OFFSET = 80; // matches fixed top nav height (h-20)
+
       const getDistance = () => {
-        // distance the track must travel = its scrollWidth minus viewport width
-        const overflow = track.scrollWidth - window.innerWidth;
+        // distance the track must travel = its scrollWidth minus visible width of pin container
+        const overflow = track.scrollWidth - pin.clientWidth;
         return Math.max(overflow, 0);
       };
 
@@ -59,10 +62,11 @@
         x: () => -getDistance(),
         ease: 'none',
         scrollTrigger: {
-          trigger: section,
-          start: 'top top',
+          trigger: pin,
+          start: `top ${HEADER_OFFSET}px`,
           end: () => `+=${getDistance()}`,
           pin: true,
+          pinSpacing: true,
           anticipatePin: 1,
           scrub: 0.6,
           invalidateOnRefresh: true,
