@@ -130,7 +130,7 @@
 <main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-margin-desktop">
 <div class="mb-12">
 <h1 class="font-headline-xl text-headline-xl text-primary mb-4 md:hidden font-headline-xl-mobile text-headline-xl-mobile" data-reveal data-reveal-delay="1">Онлайн Запись</h1>
-<h1 class="font-headline-xl text-headline-xl text-primary mb-4 hidden md:block" data-reveal data-reveal-delay="1">Онлайн Запись</h1>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4 hidden md:block inline-block" data-reveal data-reveal-delay="1"><span class="h-underline">Онлайн Запись</span></h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Пожалуйста, следуйте шагам ниже, чтобы выбрать удобное время и услугу. Наш администратор свяжется с вами для подтверждения.</p>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
@@ -139,7 +139,7 @@
 <!-- Step 1: Select Service -->
 <section class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm relative overflow-hidden" data-reveal>
 <div class="flex items-center mb-6">
-<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm mr-4">1</div>
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm mr-4 step-num">1</div>
 <h2 class="font-headline-lg text-headline-lg md:font-headline-lg text-headline-lg text-on-surface" data-reveal data-reveal-delay="1">Выберите услугу</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -169,7 +169,7 @@
 <!-- Step 2: Select Date & Time -->
 <section class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm opacity-50 pointer-events-none" data-reveal>
 <div class="flex items-center mb-6">
-<div class="w-8 h-8 rounded-full border-2 border-outline-variant text-outline-variant flex items-center justify-center font-label-sm text-label-sm mr-4">2</div>
+<div class="w-8 h-8 rounded-full border-2 border-outline-variant text-outline-variant flex items-center justify-center font-label-sm text-label-sm mr-4 step-num">2</div>
 <h2 class="font-headline-lg text-headline-lg text-on-surface-variant" data-reveal data-reveal-delay="1">Выберите дату и время</h2>
 </div>
 <div class="p-4 bg-surface-container-lowest border border-outline-variant rounded-lg text-center font-body-md text-body-md text-on-surface-variant">
@@ -179,7 +179,7 @@
 <!-- Step 3: Contacts -->
 <section class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm opacity-50 pointer-events-none" data-reveal>
 <div class="flex items-center mb-6">
-<div class="w-8 h-8 rounded-full border-2 border-outline-variant text-outline-variant flex items-center justify-center font-label-sm text-label-sm mr-4">3</div>
+<div class="w-8 h-8 rounded-full border-2 border-outline-variant text-outline-variant flex items-center justify-center font-label-sm text-label-sm mr-4 step-num">3</div>
 <h2 class="font-headline-lg text-headline-lg text-on-surface-variant" data-reveal data-reveal-delay="1">Ваши контакты</h2>
 </div>
 <div class="p-4 bg-surface-container-lowest border border-outline-variant rounded-lg text-center font-body-md text-body-md text-on-surface-variant">
@@ -189,7 +189,7 @@
 </div>
 <!-- Right Column: Summary Sticky -->
 <div class="lg:col-span-4">
-<div class="sticky top-32 bg-surface-container rounded-xl p-8 border border-outline-variant shadow-sm">
+<div class="sticky top-32 bg-surface-container rounded-xl p-8 border border-outline-variant shadow-sm" data-reveal="right">
 <h3 class="font-headline-lg text-headline-lg text-on-surface mb-6 border-b border-outline-variant pb-4">Ваша запись</h3>
 <div class="space-y-4 mb-8">
 <div>
