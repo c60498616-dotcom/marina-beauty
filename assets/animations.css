@@ -271,6 +271,120 @@ body {
   transition-duration: 0ms;
 }
 
+/* ---------- Horizontal pinned showcase (.hpin) ---------- */
+.hpin {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: #0b1c30; /* on-surface */
+  color: #f8f9ff;       /* surface */
+  overflow: hidden;
+}
+.hpin__pin {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  min-height: 600px;
+}
+.hpin__intro {
+  flex: 0 0 38vw;
+  max-width: 520px;
+  padding: 7vh 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hpin__intro h2,
+.hpin__intro h2 .h-underline {
+  color: #f8f9ff;
+}
+.hpin__intro .h-underline::after {
+  background: #7bd1fa;
+}
+.hpin__intro p {
+  color: rgba(248, 249, 255, 0.7);
+}
+.hpin__hint {
+  color: rgba(248, 249, 255, 0.55);
+  animation: hpin-bounce 2.4s var(--ease-in-out-smooth) infinite;
+}
+@keyframes hpin-bounce {
+  0%, 100% { transform: translateX(0); }
+  50%      { transform: translateX(6px); }
+}
+.hpin__track {
+  display: flex;
+  flex: 1 1 auto;
+  will-change: transform;
+}
+.hpin__panel {
+  flex: 0 0 70vw;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 4vh 4vw;
+  margin-right: 24px;
+}
+.hpin__panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,28,48,0) 40%, rgba(11,28,48,0.85) 100%);
+  pointer-events: none;
+}
+.hpin__caption {
+  position: relative;
+  z-index: 1;
+  max-width: 460px;
+  color: #fff;
+}
+.hpin__progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.hpin__progress-fill {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #7bd1fa, #b3c5ff);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 80ms linear;
+}
+
+/* Mobile / reduced fallback: native horizontal scroll, no pinning */
+.hpin--reduced .hpin__pin {
+  flex-direction: column;
+  height: auto;
+}
+.hpin--reduced .hpin__intro {
+  flex: 0 0 auto;
+  max-width: 100%;
+  border-right: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.hpin--reduced .hpin__track {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.hpin--reduced .hpin__panel {
+  flex: 0 0 85vw;
+  height: 70vh;
+  min-height: 480px;
+  scroll-snap-align: start;
+}
+.hpin--reduced .hpin__progress { display: none; }
+
 /* ---------- Reduced motion respect ---------- */
 @media (prefers-reduced-motion: reduce) {
   *,

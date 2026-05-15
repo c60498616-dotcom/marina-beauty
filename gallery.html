@@ -106,6 +106,10 @@
     </style>
 <link href="assets/animations.css" rel="stylesheet"/>
 <script defer src="assets/scripts.js"></script>
+<!-- GSAP + ScrollTrigger for horizontal pin scroll -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="assets/horizontal-pin.js"></script>
 </head>
 <body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md">
 <!-- TopNavBar Component -->
@@ -181,6 +185,70 @@
 </div>
 </div>
 </div>
+<!-- Horizontal Pinned Showcase ---------------------------------- -->
+<section class="hpin mt-24 -mx-gutter md:-mx-margin-desktop" data-hpin>
+<div class="hpin__pin">
+<div class="hpin__intro">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Showcase</span>
+<h2 class="font-headline-xl text-headline-xl md:text-headline-xl text-on-surface mt-3 inline-block">
+<span class="h-underline">Сезонная коллекция</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-6">Прокрутите вниз — листайте горизонтально. Шесть авторских образов сезона.</p>
+<div class="hpin__hint font-label-sm text-label-sm text-on-surface-variant mt-8 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">swipe_right</span>
+                                Scroll
+</div>
+</div>
+<div class="hpin__track" data-hpin-track>
+<article class="hpin__panel" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8Sotq4rVVB_NKGKem4i_8L_juTAZM208PMCcWeySGEHYwNy5Gkub0tPsfT_GtyLPbiQjkd0TfPPtisY4Pr_wpRIq5zzjabJp7UFsjjFyVyAA3De7CpPQdkeA3fbXsYT7MloLOjHF7cC-4GvSLMzzEEnlFjJ55mOLL2ZINrmZmYz7UWaNO0oUv83g05Cfuj_zSU27HbhK8sG-tP8wp2KIPTVWio9FppI30BydExk--qPuZPtaWWtj68Vibn-aSo02WQBIflw6HOwL8');">
+<div class="hpin__caption">
+<span class="font-label-sm text-label-sm tracking-widest uppercase">01 / Волосы</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Морская волна</h3>
+<p class="font-body-md text-body-md mt-2 opacity-80">Объёмная укладка с акцентом на текстуру.</p>
+</div>
+</article>
+<article class="hpin__panel" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnpIJVOT8jtkYexr-gIWexkPA0PdLBIhphVXJ9LnC-RpStmziSF8_wvXY9m59JUHbkhwTdBSIiBNVG6fJeBkW_g7jQy-NuPvV6BhwMa1pXPaJU9DnfwYV_eAVRAr8OICGZUEMLQyeNiDTdAY8qpJLdp_Gw3x-jJli0cXjSfRS8AC5n4XODKIlxUo4101zMYGbaGzd5zalBeyBgovv6FCjQqB_lgkMqA8iqDnl6wosfnMFxg_l446ko0Ojj4RIjRuQBHUgxofcg8T3u');">
+<div class="hpin__caption">
+<span class="font-label-sm text-label-sm tracking-widest uppercase">02 / Ногти</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Жемчужный нюд</h3>
+<p class="font-body-md text-body-md mt-2 opacity-80">Минимализм и стерильное покрытие.</p>
+</div>
+</article>
+<article class="hpin__panel" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxyLacA3HjHzuFwwUVebVO__l1uELFONSX6wMrrkCUim44F4jcYYxdMh0i2JEj7ieQnj_j_tYaAbCdk-h5DedeQyddIyL5Y-yzeO0qTuzeZ1mos4gVngNV0a-XgLp0Pj3E2XR0bFvbiAfxVHuLITEa6Qc_KTNEGGwqFA-8tPvgr1SgymBnKjvhkz0pJeuVCOuj8EPfib1RaiaNOMHIZjNgqeq_acvtMR5Rmce04Sg_1mgieBe1Y3j4KKM3s7lfeguZeIcZh35PF7ld');">
+<div class="hpin__caption">
+<span class="font-label-sm text-label-sm tracking-widest uppercase">03 / Массаж</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Глубокое спокойствие</h3>
+<p class="font-body-md text-body-md mt-2 opacity-80">Камни, ароматы, восстановление.</p>
+</div>
+</article>
+<article class="hpin__panel" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBC8WXS7x4MSgqihzA_iIiedd-YDHqW-Vw-v506U5tEgOvEkZYHhzmXj16IjUNHAPNdtv3TUbQMYarlCRMqSH8vvNaj-OR4dvXJPwwcMrTan_WWQu-PeYGAj4THyfpShrW6zgAyi2dl9jcaQCM30_AjNpPxJ5qj4F236fc-HL_IykbIy7lE9WzdI_wPfB66gEoIfTtCGDgGls9ESjy08m1Jx37-z_w68pTcbBImq1Pdq30g-miO4iZrEgEi0Wv81fztfgLObk9E5k8H');">
+<div class="hpin__caption">
+<span class="font-label-sm text-label-sm tracking-widest uppercase">04 / Инструменты</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Прецизия мастера</h3>
+<p class="font-body-md text-body-md mt-2 opacity-80">Японская сталь, выверенный угол.</p>
+</div>
+</article>
+<article class="hpin__panel" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuDl0IG-XRdckarS9xyqQsg6Z9tES7gK92U10OgazLj6xHDa9MHPsgqIADNxZ7G3xOJ--P5gX_9LPEeV21nJrm-9DbaKS76kDmFqE-Ja1bPl0ezIPyc8-mTKtkLHHH0cel-9fqhjFNeZbAnGFVygVjXHQzhMwRHiW0Hc4T5sX4oKnP5zP4B5y4KoVGBSv2Ev7pU2Exowv9hgHPTG5oQDIuPIBO1Rbgc6nzjuwMMsyroOYbNkC4cMSUomcj7CAQa3AUZKw3dpFuTjM1Eb');">
+<div class="hpin__caption">
+<span class="font-label-sm text-label-sm tracking-widest uppercase">05 / Атмосфера</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Coastal Light</h3>
+<p class="font-body-md text-body-md mt-2 opacity-80">Свет, белый, и оттенки моря.</p>
+</div>
+</article>
+<article class="hpin__panel" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6xsbIQM0OaR0aLXJ8nuFzYFm_DCoCVotyEPgDrsMVVMkfQ9bIdJM_Oj8uJLEdyeiCSW_SaVUwtHnbJxAymsymGMIOa6dzYN1K_4s238k8F9QOLtKhD2hIbkc6vVRLCx93TVqPAtBU7DqM8IKFGx-KLLnB70CI2jdah-6UGpAHXPCe34vELP_i-sM8ggY8sNbx0I6vhArf2UWqVhaxucIBSo5MjCMrzdi5TBzhbyoqUWVhPPz-e_Zuk_xTMVQTNKJzrP9uldg315GQ');">
+<div class="hpin__caption">
+<span class="font-label-sm text-label-sm tracking-widest uppercase">06 / Финал</span>
+<h3 class="font-headline-lg text-headline-lg mt-2">Запишитесь сейчас</h3>
+<a href="booking.html" class="btn-shimmer inline-block mt-4 bg-primary-container text-on-primary px-6 py-3 rounded-lg font-label-sm text-label-sm">Забронировать визит</a>
+</div>
+</article>
+</div>
+</div>
+<!-- Progress indicator -->
+<div class="hpin__progress" aria-hidden="true">
+<div class="hpin__progress-fill" data-hpin-progress></div>
+</div>
+</section>
 <!-- Load More Action -->
 <div class="mt-16 text-center">
 <button class="bg-surface text-primary border border-primary px-8 py-4 rounded-xl hover:bg-primary-container/10 transition-colors font-label-sm text-label-sm shadow-sm inline-flex items-center gap-2">
