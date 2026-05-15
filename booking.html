@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>МАРИНА БЬЮТИ - Онлайн Запись</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS Setup -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#e5eeff",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "surface-container-low": "#eff4ff",
+                        "on-primary-container": "#afc1ff",
+                        "surface-container-high": "#dce9ff",
+                        "outline-variant": "#c3c6d6",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "secondary-container": "#dae2fd",
+                        "error": "#ba1a1a",
+                        "secondary": "#565e74",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "tertiary-container": "#4e5153",
+                        "surface-variant": "#d3e4fe",
+                        "inverse-surface": "#213145",
+                        "on-surface": "#0b1c30",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#cbdbf5",
+                        "inverse-primary": "#b3c5ff",
+                        "surface-tint": "#2156ca",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-secondary-container": "#5c647a",
+                        "on-primary-fixed-variant": "#003ea6",
+                        "secondary-fixed": "#dae2fd",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "surface": "#f8f9ff",
+                        "on-tertiary-fixed": "#191c1e",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#0047bb",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "on-background": "#0b1c30",
+                        "surface-bright": "#f8f9ff",
+                        "tertiary-fixed": "#e0e3e5",
+                        "primary": "#00328a",
+                        "outline": "#737685",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#434653",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#131b2e",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#373a3c",
+                        "on-primary-fixed": "#00174a",
+                        "background": "#f8f9ff",
+                        "on-tertiary-container": "#c1c4c6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Manrope", "sans-serif"],
+                        "headline-lg": ["Manrope", "sans-serif"],
+                        "body-md": ["Manrope", "sans-serif"],
+                        "headline-lg-mobile": ["Manrope", "sans-serif"],
+                        "headline-xl-mobile": ["Manrope", "sans-serif"],
+                        "body-lg": ["Manrope", "sans-serif"],
+                        "headline-xl": ["Manrope", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-xl-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+    </style>
+<link href="assets/animations.css" rel="stylesheet"/>
+<script defer src="assets/scripts.js"></script>
+</head>
+<body class="bg-background text-on-background antialiased pt-24 font-body-md text-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface/70 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/30 shadow-sm transition-transform duration-200 ease-out">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg font-extrabold tracking-tighter text-primary">
+                МАРИНА БЬЮТИ
+            </div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm nav-link" href="index.html" data-route="index.html">Главная</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm nav-link" href="price.html" data-route="price.html">Услуги</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm nav-link" href="gallery.html" data-route="gallery.html">Галерея</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-sm text-label-sm nav-link" href="booking.html" data-route="booking.html">Запись</a>
+</nav>
+<a href="booking.html" data-route="booking.html" class="bg-primary-container text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-lg hover:bg-primary transition-colors hidden md:block btn-shimmer inline-block">
+                Забронировать
+            </a>
+<!-- Mobile Menu Icon (Simplified for structure) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu" data-weight="fill">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-margin-desktop">
+<div class="mb-12">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4 md:hidden font-headline-xl-mobile text-headline-xl-mobile" data-reveal data-reveal-delay="1">Онлайн Запись</h1>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4 hidden md:block" data-reveal data-reveal-delay="1">Онлайн Запись</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Пожалуйста, следуйте шагам ниже, чтобы выбрать удобное время и услугу. Наш администратор свяжется с вами для подтверждения.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Form Steps -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Step 1: Select Service -->
+<section class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm relative overflow-hidden" data-reveal>
+<div class="flex items-center mb-6">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm mr-4">1</div>
+<h2 class="font-headline-lg text-headline-lg md:font-headline-lg text-headline-lg text-on-surface" data-reveal data-reveal-delay="1">Выберите услугу</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Service Card 1 (Selected) -->
+<div class="p-6 rounded-lg border-2 border-primary bg-surface-container-low cursor-pointer transition-all">
+<h3 class="font-label-sm text-label-sm text-primary mb-2">Волосы</h3>
+<div class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Стрижка &amp; Укладка</div>
+<div class="font-body-md text-body-md text-on-surface-variant mb-4">60 мин • Комплексный уход</div>
+<div class="font-label-sm text-label-sm text-primary">от 3 500 ₽</div>
+</div>
+<!-- Service Card 2 -->
+<div class="p-6 rounded-lg border border-outline-variant hover:border-primary/50 hover:bg-surface-container-low cursor-pointer transition-all">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-2">Ногти</h3>
+<div class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Маникюр Классический</div>
+<div class="font-body-md text-body-md text-on-surface-variant mb-4">90 мин • С покрытием</div>
+<div class="font-label-sm text-label-sm text-primary">от 2 000 ₽</div>
+</div>
+<!-- Service Card 3 -->
+<div class="p-6 rounded-lg border border-outline-variant hover:border-primary/50 hover:bg-surface-container-low cursor-pointer transition-all">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-2">Лицо</h3>
+<div class="font-body-lg text-body-lg text-on-surface font-semibold mb-1">Уход "Морской Бриз"</div>
+<div class="font-body-md text-body-md text-on-surface-variant mb-4">45 мин • Увлажнение</div>
+<div class="font-label-sm text-label-sm text-primary">от 4 200 ₽</div>
+</div>
+</div>
+</section>
+<!-- Step 2: Select Date & Time -->
+<section class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm opacity-50 pointer-events-none" data-reveal>
+<div class="flex items-center mb-6">
+<div class="w-8 h-8 rounded-full border-2 border-outline-variant text-outline-variant flex items-center justify-center font-label-sm text-label-sm mr-4">2</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface-variant" data-reveal data-reveal-delay="1">Выберите дату и время</h2>
+</div>
+<div class="p-4 bg-surface-container-lowest border border-outline-variant rounded-lg text-center font-body-md text-body-md text-on-surface-variant">
+                        Пожалуйста, сначала выберите услугу
+                    </div>
+</section>
+<!-- Step 3: Contacts -->
+<section class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm opacity-50 pointer-events-none" data-reveal>
+<div class="flex items-center mb-6">
+<div class="w-8 h-8 rounded-full border-2 border-outline-variant text-outline-variant flex items-center justify-center font-label-sm text-label-sm mr-4">3</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface-variant" data-reveal data-reveal-delay="1">Ваши контакты</h2>
+</div>
+<div class="p-4 bg-surface-container-lowest border border-outline-variant rounded-lg text-center font-body-md text-body-md text-on-surface-variant">
+                        Заполняется на финальном этапе
+                    </div>
+</section>
+</div>
+<!-- Right Column: Summary Sticky -->
+<div class="lg:col-span-4">
+<div class="sticky top-32 bg-surface-container rounded-xl p-8 border border-outline-variant shadow-sm">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-6 border-b border-outline-variant pb-4">Ваша запись</h3>
+<div class="space-y-4 mb-8">
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-1">Услуга</div>
+<div class="font-body-lg text-body-lg text-on-surface font-semibold">Стрижка &amp; Укладка</div>
+<div class="font-body-md text-body-md text-on-surface-variant">60 мин</div>
+</div>
+<div class="border-t border-outline-variant/50 pt-4">
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-1">Дата и Время</div>
+<div class="font-body-md text-body-md text-on-surface-variant italic">Не выбрано</div>
+</div>
+<div class="border-t border-outline-variant/50 pt-4 flex justify-between items-end">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Предварительная стоимость</div>
+<div class="font-headline-lg text-headline-lg text-primary">3 500 ₽</div>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary font-label-sm text-label-sm px-6 py-4 rounded-lg hover:bg-primary transition-colors opacity-50 cursor-not-allowed">
+                        Продолжить
+                    </button>
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant mt-4">
+                        Нажимая кнопку, вы соглашаетесь с <a class="underline hover:text-primary" href="#">политикой конфиденциальности</a>.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full py-16 mt-auto border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit">
+<div class="col-span-1 md:col-span-2 lg:col-span-1 mb-8 lg:mb-0">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface mb-4">
+                    МАРИНА БЬЮТИ
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                    © 2024 Марина Бьюти. Роскошь и морская точность.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all duration-300 nav-link" href="index.html" data-route="index.html">О салоне</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all duration-300 nav-link" href="index.html" data-route="index.html">Мастера</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all duration-300 nav-link" href="price.html" data-route="price.html">Прайс-лист</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all duration-300 nav-link" href="booking.html" data-route="booking.html">Контакты</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Политика конфиденциальности</a>
+</div>
+</div>
+</footer>
+</body></html>

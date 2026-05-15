@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Прайс-лист - МАРИНА БЬЮТИ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#e5eeff",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "surface-container-low": "#eff4ff",
+                      "on-primary-container": "#afc1ff",
+                      "surface-container-high": "#dce9ff",
+                      "outline-variant": "#c3c6d6",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "secondary-container": "#dae2fd",
+                      "error": "#ba1a1a",
+                      "secondary": "#565e74",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#dbe1ff",
+                      "tertiary-container": "#4e5153",
+                      "surface-variant": "#d3e4fe",
+                      "inverse-surface": "#213145",
+                      "on-surface": "#0b1c30",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#cbdbf5",
+                      "inverse-primary": "#b3c5ff",
+                      "surface-tint": "#2156ca",
+                      "surface-container-highest": "#d3e4fe",
+                      "on-secondary-container": "#5c647a",
+                      "on-primary-fixed-variant": "#003ea6",
+                      "secondary-fixed": "#dae2fd",
+                      "primary-fixed-dim": "#b3c5ff",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "surface": "#f8f9ff",
+                      "on-tertiary-fixed": "#191c1e",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#0047bb",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#3f465c",
+                      "on-background": "#0b1c30",
+                      "surface-bright": "#f8f9ff",
+                      "tertiary-fixed": "#e0e3e5",
+                      "primary": "#00328a",
+                      "outline": "#737685",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#434653",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#131b2e",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#373a3c",
+                      "on-primary-fixed": "#00174a",
+                      "background": "#f8f9ff",
+                      "on-tertiary-container": "#c1c4c6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "64px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-xl-mobile": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "headline-xl": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<link href="assets/animations.css" rel="stylesheet"/>
+<script defer src="assets/scripts.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface/70 dark:bg-inverse-surface/70 backdrop-blur-xl text-primary dark:text-inverse-primary fixed top-0 w-full z-50 border-b border-white/30 dark:border-outline/20 shadow-sm font-body-md text-body-md">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg font-extrabold tracking-tighter text-primary dark:text-inverse-primary">
+                МАРИНА БЬЮТИ
+            </div>
+<nav class="hidden md:flex space-x-8 items-center font-label-sm text-label-sm">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors hover:bg-primary-container/10 dark:hover:bg-primary-fixed/20 rounded-xl px-4 py-2 nav-link" href="index.html" data-route="index.html">Главная</a>
+<a class="text-primary dark:text-inverse-primary border-b-2 border-primary pb-1 hover:bg-primary-container/10 dark:hover:bg-primary-fixed/20 rounded-xl px-4 py-2 nav-link" href="price.html" data-route="price.html">Услуги</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors hover:bg-primary-container/10 dark:hover:bg-primary-fixed/20 rounded-xl px-4 py-2 nav-link" href="gallery.html" data-route="gallery.html">Галерея</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors hover:bg-primary-container/10 dark:hover:bg-primary-fixed/20 rounded-xl px-4 py-2 nav-link" href="booking.html" data-route="booking.html">Запись</a>
+</nav>
+<a href="booking.html" data-route="booking.html" class="hidden md:block bg-primary-container text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-lg hover:bg-primary transition-colors btn-shimmer inline-block">
+                Забронировать
+            </a>
+<!-- Mobile menu button -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<div class="mb-16 text-center md:text-left">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4" data-reveal data-reveal-delay="1">Прайс-лист</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Откройте для себя наш спектр профессиональных услуг. Мы используем только премиальные материалы и гарантируем высочайший уровень сервиса.
+            </p>
+</div>
+<!-- Pricing Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Category 1: Парикмахерский зал -->
+<div class="bg-surface rounded-xl border border-outline-variant/30 overflow-hidden shadow-[0_8px_30px_rgba(0,71,187,0.04)]">
+<div class="h-48 w-full bg-cover bg-center" data-alt="A modern, high-end hair salon interior with sleek mirrors and professional styling chairs. The lighting is bright and airy, reflecting a clean, light-mode modern minimalist aesthetic with subtle blue undertones. A sense of luxury and precision permeates the space." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNpsN8FWXSobe-pHgYdrvOuGwUWaxJIAPPO7SppjnF83YWkT71hlJXgEg445_GjzAkKseuCw_27fOEBkRRS7SOA9K1R_E8_NNK2-pCIF4HuK2PIfOdG06GSKF__st6o_koDNwYJObHActL-s1DnpHIHqy9Omzo6mRogYLQ3G_dFQUhnRp_hbufF2RIazPTFaKIZDKNnNg7t4wqQLgSnv97yu921TUopfymfntcgKcGDaoqrEt68WFvAjiLDbW1j3vrZluj0K7VlCvC');"></div>
+<div class="p-8">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3" data-reveal data-reveal-delay="1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">content_cut</span>
+                        Парикмахерский зал
+                    </h2>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Стрижка женская</span>
+<span class="font-label-sm text-label-sm text-primary">от 1500 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Стрижка мужская</span>
+<span class="font-label-sm text-label-sm text-primary">от 1200 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Окрашивание в один тон</span>
+<span class="font-label-sm text-label-sm text-primary">от 3500 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Сложное окрашивание</span>
+<span class="font-label-sm text-label-sm text-primary">от 6000 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Укладка</span>
+<span class="font-label-sm text-label-sm text-primary">от 1000 ₽</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Category 2: Ногтевой сервис -->
+<div class="bg-surface rounded-xl border border-outline-variant/30 overflow-hidden shadow-[0_8px_30px_rgba(0,71,187,0.04)]">
+<div class="h-48 w-full bg-cover bg-center" data-alt="A pristine manicure station with elegant tools and soft, diffused natural light pouring in. The setting embodies a refined, high-end beauty salon atmosphere in a light-mode color palette, featuring crisp whites and calming neutral tones that suggest maritime elegance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1sYFuCvTXWC6MvXzaYXoTb6EF6NffiVR8f-3dkciR-lTiwERY85fqjGKnqTdoKxGFyNmpohais9ZegB63n0RnCGcPi63rVmaRIKWXpp26UToQlRfJ8MUh2XE1IGrnCsPB37vnYIOw_6BdmYTCkTHPS576kBRm64g3Oe4wVQprBitxNTagfcAuvj38odyz402-cKr3BwVTAmUV5y2ivul3EQK8tEx0OR2Huonp4AMPuofjPUksd9K6rwCDKWOUbm7h8phUR5A8r_r5');"></div>
+<div class="p-8">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3" data-reveal data-reveal-delay="1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">spa</span>
+                        Ногтевой сервис
+                    </h2>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Маникюр классический</span>
+<span class="font-label-sm text-label-sm text-primary">от 1200 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Маникюр с покрытием гель-лак</span>
+<span class="font-label-sm text-label-sm text-primary">от 2200 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Педикюр классический</span>
+<span class="font-label-sm text-label-sm text-primary">от 2000 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Педикюр с покрытием гель-лак</span>
+<span class="font-label-sm text-label-sm text-primary">от 3000 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Наращивание ногтей</span>
+<span class="font-label-sm text-label-sm text-primary">от 4000 ₽</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Category 3: Уход за телом -->
+<div class="bg-surface rounded-xl border border-outline-variant/30 overflow-hidden shadow-[0_8px_30px_rgba(0,71,187,0.04)]">
+<div class="h-48 w-full bg-cover bg-center" data-alt="A tranquil massage and body care room with fresh towels, subtle greenery, and a minimalist design. The lighting is soft and inviting, reflecting a premium, relaxing spa environment. The color scheme is light and airy, maintaining the modern nautical elegance aesthetic with touches of sea slate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVz3_xzoEnRkBoKYCazHp2C9iDsKE5WL7jzk2OtxOIH2ZSPdCHqiQ0Hx2jFfM8pIO7LHoKSulJNMsFz_nw2nrg8Jyo1rqI3veLydT5D0pV6Z7K_LZJJgUj64sR3JeFFniifm-LnU0V_J4ivWkoKuWBc4VXOH-KGWDt7nMSSeaUL2h5oHRQ25GBDPv4Wl01Iw3CoiQfkqz5By6jqaic1w1MQ369wJc02s9ga_JJjz2bBr9yTDGNHujJSoEiA2trowW7actlLXFASQrP');"></div>
+<div class="p-8">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 flex items-center gap-3" data-reveal data-reveal-delay="1">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">self_improvement</span>
+                        Уход за телом
+                    </h2>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Массаж классический (60 мин)</span>
+<span class="font-label-sm text-label-sm text-primary">от 2500 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Антицеллюлитный массаж</span>
+<span class="font-label-sm text-label-sm text-primary">от 3000 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Обертывание водорослевое</span>
+<span class="font-label-sm text-label-sm text-primary">от 3500 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">Пилинг тела</span>
+<span class="font-label-sm text-label-sm text-primary">от 2000 ₽</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-3 hover:text-primary transition-colors group cursor-default">
+<span class="border-l-2 border-transparent group-hover:border-primary pl-2 transition-all">SPA-программа "Морской бриз"</span>
+<span class="font-label-sm text-label-sm text-primary">от 6000 ₽</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Call to Action Banner -->
+<div class="mt-24 bg-surface-container rounded-xl p-10 flex flex-col md:flex-row items-center justify-between shadow-sm border border-outline-variant/20">
+<div class="mb-6 md:mb-0">
+<h3 class="font-headline-lg text-headline-lg text-on-surface mb-2">Готовы к преображению?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Запишитесь на удобное для вас время прямо сейчас.</p>
+</div>
+<a href="booking.html" data-route="booking.html" class="bg-primary-container text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-lg hover:bg-primary transition-colors w-full md:w-auto text-center whitespace-nowrap btn-shimmer inline-block">
+                Онлайн запись
+            </a>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface text-primary dark:text-inverse-primary w-full py-16 font-body-md text-body-md">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit">
+<div class="mb-8 lg:mb-0">
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface dark:text-on-surface-variant mb-4">
+                    МАРИНА БЬЮТИ
+                </div>
+<p class="text-on-surface-variant dark:text-on-tertiary-fixed-variant text-sm">
+                    © 2024 Марина Бьюти. Роскошь и морская точность.
+                </p>
+</div>
+<div class="flex flex-col space-y-3 font-label-sm text-label-sm">
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 nav-link" href="index.html" data-route="index.html">О салоне</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 nav-link" href="index.html" data-route="index.html">Мастера</a>
+</div>
+<div class="flex flex-col space-y-3 font-label-sm text-label-sm">
+<a class="text-primary dark:text-inverse-primary font-bold underline hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 nav-link" href="price.html" data-route="price.html">Прайс-лист</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 nav-link" href="booking.html" data-route="booking.html">Контакты</a>
+</div>
+<div class="flex flex-col space-y-3 font-label-sm text-label-sm">
+<a class="text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300" href="#">Политика конфиденциальности</a>
+</div>
+</div>
+</footer>
+</body></html>

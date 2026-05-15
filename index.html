@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>МАРИНА БЬЮТИ | Роскошь и морская точность</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Style Guidance -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#e5eeff",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "surface-container-low": "#eff4ff",
+                      "on-primary-container": "#afc1ff",
+                      "surface-container-high": "#dce9ff",
+                      "outline-variant": "#c3c6d6",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "secondary-container": "#dae2fd",
+                      "error": "#ba1a1a",
+                      "secondary": "#565e74",
+                      "inverse-on-surface": "#eaf1ff",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#dbe1ff",
+                      "tertiary-container": "#4e5153",
+                      "surface-variant": "#d3e4fe",
+                      "inverse-surface": "#213145",
+                      "on-surface": "#0b1c30",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#cbdbf5",
+                      "inverse-primary": "#b3c5ff",
+                      "surface-tint": "#2156ca",
+                      "surface-container-highest": "#d3e4fe",
+                      "on-secondary-container": "#5c647a",
+                      "on-primary-fixed-variant": "#003ea6",
+                      "secondary-fixed": "#dae2fd",
+                      "primary-fixed-dim": "#b3c5ff",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "surface": "#f8f9ff",
+                      "on-tertiary-fixed": "#191c1e",
+                      "on-secondary": "#ffffff",
+                      "primary-container": "#0047bb",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#3f465c",
+                      "on-background": "#0b1c30",
+                      "surface-bright": "#f8f9ff",
+                      "tertiary-fixed": "#e0e3e5",
+                      "primary": "#00328a",
+                      "outline": "#737685",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#434653",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#131b2e",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#373a3c",
+                      "on-primary-fixed": "#00174a",
+                      "background": "#f8f9ff",
+                      "on-tertiary-container": "#c1c4c6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "64px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Manrope"],
+                      "headline-lg": ["Manrope"],
+                      "body-md": ["Manrope"],
+                      "headline-lg-mobile": ["Manrope"],
+                      "headline-xl-mobile": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "headline-xl": ["Manrope"]
+              },
+              "fontSize": {
+                      "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-xl-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+              }
+            }
+          }
+        }
+    </script>
+<link href="assets/animations.css" rel="stylesheet"/>
+<script defer src="assets/scripts.js"></script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
+<!-- TopNavBar Shared Component -->
+<header class="bg-surface/70 dark:bg-inverse-surface/70 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/30 dark:border-outline/20 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-lg text-headline-lg font-extrabold tracking-tighter text-primary dark:text-inverse-primary hover:opacity-80 transition-opacity brand-float" href="#">
+                МАРИНА БЬЮТИ
+            </a>
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-label-sm text-label-sm text-primary dark:text-inverse-primary border-b-2 border-primary pb-1 nav-link" href="index.html" data-route="index.html">
+                    Главная
+                </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors hover:bg-primary-container/10 dark:hover:bg-primary-fixed/20 rounded-xl px-2 py-1 nav-link" href="price.html" data-route="price.html">
+                    Услуги
+                </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors hover:bg-primary-container/10 dark:hover:bg-primary-fixed/20 rounded-xl px-2 py-1 nav-link" href="gallery.html" data-route="gallery.html">
+                    Галерея
+                </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors hover:bg-primary-container/10 dark:hover:bg-primary-fixed/20 rounded-xl px-2 py-1 nav-link" href="booking.html" data-route="booking.html">
+                    Запись
+                </a>
+</nav>
+<!-- Trailing Action -->
+<a href="booking.html" data-route="booking.html" class="font-label-sm text-label-sm bg-primary-container text-on-primary px-6 py-3 rounded-DEFAULT hover:bg-primary transition-colors duration-200 ease-out active:scale-95 shadow-sm hidden md:block btn-shimmer inline-block">
+                Забронировать
+            </a>
+<!-- Mobile Menu Toggle (Visible only on mobile) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-20"> <!-- Offset for fixed header -->
+<!-- Hero Section -->
+<section class="relative w-full min-h-[819px] flex items-center bg-surface-variant overflow-hidden" data-reveal>
+<!-- Background Image -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="Salon Interior" class="w-full h-full object-cover object-center opacity-80 hero-parallax" data-alt="A pristine, high-end beauty salon interior flooded with natural daylight. The design reflects a modern nautical elegance, featuring expansive white surfaces, subtle glass partitions, and deep marine blue accent chairs. A feeling of tranquil luxury and immaculate cleanliness permeates the spacious layout. Sophisticated, minimalist lighting fixtures cast a soft, serene glow across the premium styling stations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6xsbIQM0OaR0aLXJ8nuFzYFm_DCoCVotyEPgDrsMVVMkfQ9bIdJM_Oj8uJLEdyeiCSW_SaVUwtHnbJxAymsymGMIOa6dzYN1K_4s238k8F9QOLtKhD2hIbkc6vVRLCx93TVqPAtBU7DqM8IKFGx-KLLnB70CI2jdah-6UGpAHXPCe34vELP_i-sM8ggY8sNbx0I6vhArf2UWqVhaxucIBSo5MjCMrzdi5TBzhbyoqUWVhPPz-e_Zuk_xTMVQTNKJzrP9uldg315GQ"/>
+<!-- Subtle Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/60 to-transparent"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-container-max mx-auto px-gutter md:px-margin-desktop w-full">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface mb-6 drop-shadow-sm" data-reveal data-reveal-delay="1">
+                        Подчеркните свою естественную красоту
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+                        Погрузитесь в атмосферу спокойствия и профессионализма. Наши мастера объединяют морскую точность с современной эстетикой, чтобы создать ваш идеальный образ.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="booking.html" data-route="booking.html" class="font-label-sm text-label-sm bg-primary-container text-on-primary px-8 py-4 rounded-DEFAULT hover:bg-primary transition-colors shadow-sm text-center btn-shimmer inline-block">
+                            Забронировать визит
+                        </a>
+<button class="font-label-sm text-label-sm bg-transparent border border-primary text-primary px-8 py-4 rounded-DEFAULT hover:bg-primary/5 transition-colors text-center">
+                            Узнать больше
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Summary Section (Bento Grid Style) -->
+<section class="py-24 bg-background" data-reveal>
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4" data-reveal data-reveal-delay="1">Наши Услуги</h2>
+<div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="group relative bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_8px_30px_rgba(0,71,187,0.08)] transition-all duration-300 flex flex-col h-full kinetic lift">
+<div class="h-64 w-full relative overflow-hidden bg-surface-variant">
+<img alt="Haircuts and Styling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up shot of a professional hair stylist's hands delicately working on long, flowing hair. The setting is bright and immaculate, with soft, diffused light highlighting the texture of the hair. The overall aesthetic is clean, elegant, and focused on precision, utilizing a palette of crisp whites and subtle silver tones. The mood is calm and expertly refined." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1NaIHdAtEyk2LF4mhVqbaK4Bijb1pl4I4i24Mvvt2IPBsjGK7PZZIGjmg9_ZzZbCFrWiboQRlbtcPsn9kNfD6AwDypnBDCHHyVDNsJIGq3EVDZfuI_UGBnOohQ2WpzOOb2CcTdxleqSVQ-ykap11a17QXWYGnuiZnyAFj-TSZv40oRe8QGH9RmHVEJqD179WRUrw_xto8fkWtYp6dH1818lg9pjDwW5WN_EbTDF_SS-VG7iGdzuvK_wL9khrfTeodzCkgEww0kj-O"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">content_cut</span>
+                                    Стрижки и укладки
+                                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    От классических форм до современных трендов. Точные линии, безупречная текстура и индивидуальный подход к структуре ваших волос.
+                                </p>
+</div>
+<a class="inline-flex items-center gap-2 mt-6 font-label-sm text-label-sm text-primary hover:text-primary-fixed-variant transition-colors" href="#">
+                                Подробнее
+                                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="group relative bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_8px_30px_rgba(0,71,187,0.08)] transition-all duration-300 flex flex-col h-full kinetic lift">
+<div class="h-64 w-full relative overflow-hidden bg-surface-variant">
+<img alt="Manicure and Pedicure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An elegant flat lay composition featuring premium nail care tools, a sleek bottle of translucent polish, and a clean, white towel on a light marble surface. Subtle hints of deep blue accent the edges of the frame. The lighting is pristine and clinical yet inviting, emphasizing hygiene, luxury, and meticulous attention to detail in a high-end salon environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAFJaGt_jpBJc68djLPIwS6dj3uQcChPZ7L2GUy81gQ9byFfRCh2AKrN9v8ipjE1m1NXy4IVTsNadeC41qdNISmcVgBaalb8MN5JF_Bkm9hPXpbjnfbaZ_RPlCTckhksd8M1WJHIIBJYAtGwLBaAjOWHBoKOzBehAwODTcP2iY6ieKR39vryO4S9zrSZL5TA9zfNtM70Sj00XRGtYOXnyg_VnfblJbNZtA1r003uxQMmxBt5ArZVG8DRISne7o4mEg4oOVMuumJxtS"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">spa</span>
+                                    Маникюр и педикюр
+                                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Идеальное покрытие и бережный уход. Используем только премиальные материалы для здоровья и красоты ваших ногтей.
+                                </p>
+</div>
+<a class="inline-flex items-center gap-2 mt-6 font-label-sm text-label-sm text-primary hover:text-primary-fixed-variant transition-colors" href="#">
+                                Подробнее
+                                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="group relative bg-surface-container-lowest rounded-lg border border-outline-variant overflow-hidden hover:shadow-[0_8px_30px_rgba(0,71,187,0.08)] transition-all duration-300 flex flex-col h-full kinetic lift">
+<div class="h-64 w-full relative overflow-hidden bg-surface-variant">
+<img alt="Professional Massage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A serene massage therapy room characterized by modern minimalism. A crisp white massage table sits centrally against a backdrop of soft, textured wall panels. Subtle, diffused lighting creates an atmosphere of deep relaxation and tranquility. Small, carefully placed nautical elements, like a smooth piece of sea glass, add to the refined, coastal-inspired aesthetic of this luxurious healing space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCppBgEB7mTdE5fdfCDigG75qY83QYEqKh-16BJkfKLM8cpxhw01_mQLeUk4jNGtEfP8j44CApJ1BwcmSCLN5j94HQQFnOo7wPOFHXv_1oK93jcuJbpR-xevLfYg0BoMEuak-4fS0Erf6p2C4UnTeodcxtYy6NjMp-dMMzl05wMlyc9ELvCJsNPgKT7EaKo8aE7xA8HvaPlPv_ZtDohwff01rrr2PsDJvg_ku1hEB4-3v6CN150raRRrIUj3ZWEirIfLYau67LDFePt"/>
+</div>
+<div class="p-8 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">self_care</span>
+                                    Профессиональный массаж
+                                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                    Снятие напряжения и восстановление баланса. Глубокие техники релаксации в атмосфере абсолютного спокойствия.
+                                </p>
+</div>
+<a class="inline-flex items-center gap-2 mt-6 font-label-sm text-label-sm text-primary hover:text-primary-fixed-variant transition-colors" href="#">
+                                Подробнее
+                                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface w-full py-16">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-unit gap-y-12">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface dark:text-on-surface-variant">
+                    МАРИНА БЬЮТИ
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant max-w-xs">
+                    Роскошь и морская точность в каждой детали вашего образа.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-label-sm text-primary dark:text-inverse-primary uppercase tracking-wider">Навигация</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 opacity-100 hover:opacity-80 nav-link" href="index.html" data-route="index.html">О салоне</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 opacity-100 hover:opacity-80 nav-link" href="index.html" data-route="index.html">Мастера</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 opacity-100 hover:opacity-80 nav-link" href="price.html" data-route="price.html">Прайс-лист</a>
+</nav>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-label-sm text-primary dark:text-inverse-primary uppercase tracking-wider">Поддержка</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 opacity-100 hover:opacity-80 nav-link" href="booking.html" data-route="booking.html">Контакты</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-300 opacity-100 hover:opacity-80" href="#">Политика конфиденциальности</a>
+</nav>
+</div>
+<!-- Contact/Action Column -->
+<div class="flex flex-col gap-4">
+<h4 class="font-label-sm text-label-sm text-primary dark:text-inverse-primary uppercase tracking-wider">Связаться с нами</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    +7 (999) 123-45-67<br/>
+                    info@marinabeauty.ru
+                </p>
+<div class="mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Марина Бьюти. Роскошь и морская точность.</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

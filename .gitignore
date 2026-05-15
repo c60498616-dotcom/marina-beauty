@@ -1,0 +1,10 @@
+node_modules/
+.vercel/
+.netlify/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+__pycache__/
